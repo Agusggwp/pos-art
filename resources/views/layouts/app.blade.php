@@ -68,7 +68,7 @@
                                       d="M13 10V3L4 14h7v7l9-11h-7z"></path>
                             </svg>
                         </div>
-                        <a href="{{ url('/') }}" class="text-xl font-bold text-gray-900">POS ARTDEVATA</a>
+                        <a href="{{ url('/') }}" class="text-xl font-bold text-gray-900">POS ARTDEVATA NI BOS</a>
                     </div>
 
                     <div class="flex items-center space-x-4">
