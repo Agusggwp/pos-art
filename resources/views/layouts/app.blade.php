@@ -164,7 +164,7 @@
             </div>
 
             <!-- Mobile Menu -->
-            <<div id="mobile-menu" class="md:hidden hidden bg-white border-t border-gray-200">
+            <div id="mobile-menu" class="md:hidden hidden bg-white border-t border-gray-200">
     <div class="px-2 pt-2 pb-3 space-y-1">
         @auth
             @if(auth()->user()->isAdmin())

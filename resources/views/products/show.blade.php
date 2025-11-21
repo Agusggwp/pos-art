@@ -1,12 +1,12 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="max-w-4xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+<div class="max-w-4xl mx-auto py-6 px-4 sm:px-6 lg:px-8 bg-gray-50">
     <!-- Header -->
     <div class="mb-8">
         <div class="flex items-start justify-between space-y-4 sm:space-y-0 sm:items-center">
             <div class="flex items-center space-x-4">
-                <div class="p-3 bg-primary rounded-lg">
+                <div class="p-3 bg-indigo-600 rounded-lg">
                     <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 6m0 0l-8-6m8 6V7m-4 4h.01M9 16H7m2-8h.01M9 8H7m2 8h.01M9 8H7m4 0h.01M9 16H7m2-8h.01"></path>
                     </svg>
@@ -17,7 +17,7 @@
                 </div>
             </div>
             <div class="flex space-x-3">
-                <a href="{{ route('products.edit', $product) }}" class="inline-flex items-center px-4 py-2 border border-warning text-warning bg-warning/10 hover:bg-warning/20 text-sm font-medium rounded-lg transition-all duration-200">
+                <a href="{{ route('products.edit', $product) }}" class="inline-flex items-center px-4 py-2 border border-yellow-500 text-yellow-700 bg-yellow-50 hover:bg-yellow-100 text-sm font-medium rounded-lg transition-all duration-200">
                     <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"></path>
                     </svg>
@@ -86,7 +86,7 @@
                         <div>
                             <h3 class="text-sm font-medium text-gray-500">Stok</h3>
                             <p class="text-lg font-semibold text-gray-900">
-                                <span class="inline-flex px-2 py-1 text-xs font-semibold rounded-full {{ $product->stock > 10 ? 'bg-success text-white' : ($product->stock > 0 ? 'bg-warning text-white' : 'bg-danger text-white') }}">
+                                <span class="inline-flex px-2 py-1 text-xs font-semibold rounded-full {{ $product->stock > 10 ? 'bg-green-600 text-white' : ($product->stock > 0 ? 'bg-yellow-500 text-white' : 'bg-red-600 text-white') }}">
                                     {{ $product->stock }}
                                 </span>
                             </p>
@@ -126,7 +126,7 @@
 
     <!-- Action Buttons (Footer) -->
     <div class="mt-6 flex justify-end space-x-3">
-        <a href="{{ route('products.edit', $product) }}" class="inline-flex items-center px-4 py-2 border border-warning text-warning bg-warning/10 hover:bg-warning/20 text-sm font-medium rounded-lg transition-all duration-200">
+        <a href="{{ route('products.edit', $product) }}" class="inline-flex items-center px-4 py-2 border border-yellow-500 text-yellow-700 bg-yellow-50 hover:bg-yellow-100 text-sm font-medium rounded-lg transition-all duration-200">
             <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"></path>
             </svg>
